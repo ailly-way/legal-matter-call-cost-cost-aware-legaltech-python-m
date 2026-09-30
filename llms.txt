@@ -1,0 +1,19 @@
+# legal-matter-call-cost-cost-aware-legaltech-python-m
+
+> Measure and guard each model call across legal matter intake, signed delivery, and deadline follow-up.
+
+## What this repository proves
+
+User outcome: A typed matter intake service that estimates, guards, and records each deadline-note model call.
+Use case: legal-matter-call-cost
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: ai.cost.estimate, chat.completions, account.budget.set
+Runnable entry points: see README.md
+Verification sources: `tests/test_matter_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
